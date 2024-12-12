@@ -1,24 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
+import { Route , Routes } from 'react-router-dom';
+import AddPatient from './Pages/AddPatient';
+import All_Patient from './Pages/All_Patient';
+import Navbar from './Components/Navbar';
+import { ToastContainer } from 'react-toastify';
+import Edit_Patient from './Pages/Edit_Patient';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar />
+      <Routes>
+        <Route path='/dashboard/addpatient' element={<AddPatient />}/>
+        <Route path='/dashboard/allpatient' element={<All_Patient />}/>
+        <Route path='/dashboard/update/patient/:id' element={<Edit_Patient />}/>
+      </Routes>
+      <ToastContainer
+        position="top-right"
+        autoClose={1500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss={false}
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
+    </>
   );
 }
 
