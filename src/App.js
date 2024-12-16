@@ -12,6 +12,7 @@ function App() {
     <>
     <Navbar />
       <Routes>
+      <Route path='/' element={<All_Patient />}/>
         <Route path='/dashboard/addpatient' element={<AddPatient />}/>
         <Route path='/dashboard/allpatient' element={<All_Patient />}/>
         <Route path='/dashboard/update/patient/:id' element={<Edit_Patient />}/>
