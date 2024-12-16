@@ -139,7 +139,7 @@ function Edit_Patient() {
                             </Select>
                         </FormControl>
                     </Box>
-                    <Button  type='submit' variant="contained">Submit</Button>
+                    <Button  type='submit' variant="contained">Edit Patient</Button>
                 </form>
             </div>
     </>

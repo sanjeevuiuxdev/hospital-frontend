@@ -132,6 +132,7 @@ function All_Patient() {
 
 
         <>
+        <div style={{width:"1300px",margin:"auto"}}>
             <div className='heading'>
                 <h1>All Patient</h1>
                 <span className='total'>Total Patient: {data.length}</span>
@@ -139,9 +140,9 @@ function All_Patient() {
 
             <div className='search_and_filter'>
                 <SelectBox data={filterOption} onChange={handleFilter}/>
-                <div>
+                {/* <div>
                 <TextField onChange={searchPatient} id="outlined-basic input_field" style={{ display: "block", justifyContent: "center", marginBottom: "10px" }} label="Search Patient" variant="outlined" />
-                </div>
+                </div> */}
             </div>
 
             <TableContainer component={Paper}>
@@ -190,6 +191,7 @@ function All_Patient() {
                     </TableBody>
                 </Table>
             </TableContainer>
+            </div>
 
         </>
     )

@@ -61,7 +61,7 @@ function AddPatient() {
                     <h1>Add Patient</h1>
                 </div>
                 <form onSubmit={createPatientData}>
-                    <TextField onChange={(e) => setName(e.target.value)} value={name} id="outlined-basic input_field" style={{ display: "block", justifyContent: "center", marginBottom: "10px" }} label="Enter Patient Name" variant="outlined" />
+                    <TextField onChange={(e) => setName(e.target.value)} value={name} id="outlined-basic input_field" style={{ display: "block", justifyContent: "center", marginBottom: "10px" ,width:"500px"}} label="Enter Patient Name" variant="outlined" />
                     <TextField onChange={(e) => setDisease(e.target.value)} value={disease} id="outlined-basic input_field" style={{ display: "block", justifyContent: "center", marginBottom: "10px" }} label="Enter Disease" variant="outlined" />
                     <TextField onChange={(e) => setPhoneno(e.target.value)} value={phoneno} id="outlined-basic input_field" style={{ display: "block", justifyContent: "center", marginBottom: "10px" }} label="Enter Phone No" variant="outlined" />
                     <TextField onChange={(e) => setAddress(e.target.value)} value={address} id="outlined-basic input_field" style={{ display: "block", justifyContent: "center", marginBottom: "10px" }} label="Enter Address" variant="outlined" />
@@ -132,7 +132,7 @@ function AddPatient() {
                     </Box>
 
                     {/* <Button onClick={createPatientData} type='submit' variant="contained">Submit</Button> */}
-                    <Button type='submit' variant="contained">Submit</Button>
+                    <Button type='submit' variant="contained">Add Patient</Button>
 
                 </form>
             </div>
